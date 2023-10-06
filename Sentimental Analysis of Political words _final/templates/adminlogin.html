@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+                <br>  <br>  <br>
+                
+            <!-- Begin contact section -->
+			<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(static/img/t3.jpg);">
+                <div class="cover"></div>
+                
+                     <!-- Begin page header-->
+                    <div class="page-header-wrapper">
+                        <div class="container">
+                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                <h2>Login </h2>
+                                <div class="devider"></div>
+                                <p class="subtitle">All to contact us</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End page header-->
+                    
+                    <div class="contact wow bounceInRight" data-wow-delay="0.4s">
+                        <div class="container">
+                            <div class="row">
+                            
+                                <div class="col-sm-6">
+                                    <div class="contact-info">
+                                        <h4>Admin Login</h4>
+                                        <img src="static/img/t3.jpg" alt="title"/>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-sm-6">
+                                    <div class="contact-form">
+                                       
+                                        <form role="form" action="/adminloginNext" method="POST" >
+                                            <div class="form-group">
+                                                <input type="email" style="color:white"  class="form-control input-lg" name="ausername" placeholder="User Name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" style="color:white"  class="form-control input-lg" name="apassword" placeholder="Password" required>
+                                            </div>
+                                            
+                                            <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Login</button>
+                                        </form>
+                                    </div>	
+                                </div>
+                                                                                    
+                            </div> <!-- /.row -->
+                        </div> <!-- /.container -->
+                    </div>
+                </section>
+                <!-- End contact section -->
+                    
+
+{% endblock %}
